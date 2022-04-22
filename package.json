@@ -1,5 +1,5 @@
 {
-  "name": "spotkys-discordjs-base",
+  "name": "spotkys-discord-bot-template",
   "version": "1.0.0",
   "description": "spotky1004's base Discord.js project",
   "main": "./dist/index.js",
