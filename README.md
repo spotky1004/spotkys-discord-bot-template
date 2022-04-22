@@ -1,4 +1,4 @@
-# Spotkys Discord Bot Template
+# Spotkys Discord Bot
 * This project uses "mongodb" module (with MongoDB Cloud)
 
 ## Features
@@ -12,3 +12,5 @@
 ## More things
 * Can add Logger types [here](https://github.com/spotky1004/spotkys-discord-bot-template/blob/main/src/typings/LogTypings.ts)
 * Create .env.development and .env.production with [sample](https://github.com/spotky1004/spotkys-discord-bot-template/blob/main/env/.env.sample)
+* Start bot with `npm run start-dev` and `npm run start` to run in development env and production env, respectively
+* Add command names [command name enum](https://github.com/spotky1004/spotkys-discord-bot-template/blob/main/src/commands/index.ts) to make it work
