@@ -3,7 +3,7 @@ import getSlashParams from "../../util/getSlashParams.js";
 const commandName = "unban";
 const slashCommand = new SlashCommandBuilder()
     .setName(commandName)
-    .setDescription("Unban user, but removed pixels wont' recovered.")
+    .setDescription("Unban user.")
     .addStringOption(options => options
     .setName("id")
     .setDescription("User to unban")

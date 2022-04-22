@@ -4,9 +4,7 @@ const trivias = [
     // Current status
     ({ app }) => `${Object.keys(app.userCaches.cache).length} users online!`,
     ({ app }) => `Working on ${Object.keys(app.guildCaches.cache).length} servers!`,
-    ({ client }) => `Uptime: ${client.uptime}`,
-    // Help
-    ({}) => `Use /help command to see command list.`,
+    ({ client }) => { var _a; return `Uptime: ${(((_a = client.uptime) !== null && _a !== void 0 ? _a : 0) / 3600000).toFixed(2)}h`; },
     // Random
     ({}) => `This text is being refreshed on every save. (10s)`,
 ];

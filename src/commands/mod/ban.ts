@@ -5,7 +5,7 @@ import type { CommandData } from "../../typings/Command.js";
 const commandName = "ban";
 const slashCommand = new SlashCommandBuilder()
   .setName(commandName)
-  .setDescription("Ban user to fill pixel. This will remove all pixels from that user!")
+  .setDescription("Ban user.")
   .addStringOption(options =>
     options
       .setName("id")

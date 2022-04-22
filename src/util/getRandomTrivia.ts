@@ -14,10 +14,7 @@ const trivias: TriviaItem[] = [
   // Current status
   ({ app }) => `${Object.keys(app.userCaches.cache).length} users online!`,
   ({ app }) => `Working on ${Object.keys(app.guildCaches.cache).length} servers!`,
-  ({ client }) => `Uptime: ${client.uptime}`,
-
-  // Help
-  ({ }) => `Use /help command to see command list.`,
+  ({ client }) => `Uptime: ${((client.uptime ?? 0)/3600_000).toFixed(2)}h`,
 
   // Random
   ({ }) => `This text is being refreshed on every save. (10s)`,
