@@ -1,4 +1,5 @@
 # Spotkys Discord Bot Template
+* This repository was created to make it easier to build my own bots
 * This project uses "mongodb" module (with MongoDB Cloud)
 
 ## Features
