@@ -1,4 +1,4 @@
-# Spotkys Discord Bot
+# Spotkys Discord Bot Template
 * This project uses "mongodb" module (with MongoDB Cloud)
 
 ## Features
