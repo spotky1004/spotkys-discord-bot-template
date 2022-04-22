@@ -4,11 +4,7 @@ import SaveManager, { Collection } from "./SaveManager.js";
 import Logger from "./Logger.js";
 
 interface AppConfig {
-  size: {
-    width: number;
-    height: number;
-  };
-  fillCooldown: number;
+  
 }
 interface AppOptions {
   config: AppConfig;

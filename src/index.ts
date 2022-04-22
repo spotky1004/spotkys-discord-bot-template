@@ -18,14 +18,8 @@ const client = new Discord.Client({
     "GUILDS"
   ],
 });
-const size = {
-  width: Number(process.env.WIDTH ?? "0"),
-  height: Number(process.env.HEIGHT ?? "0")
-};
 const app = new App({
   config: {
-    size,
-    fillCooldown: Number(process.env.COOLDOWN ?? 180000),
   },
   collections: {
     data: dataCollection,

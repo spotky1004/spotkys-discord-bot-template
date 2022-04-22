@@ -1,4 +1,3 @@
-var _a, _b, _c;
 import env from "./env.js";
 env();
 import Discord from "discord.js";
@@ -18,15 +17,8 @@ const client = new Discord.Client({
         "GUILDS"
     ],
 });
-const size = {
-    width: Number((_a = process.env.WIDTH) !== null && _a !== void 0 ? _a : "0"),
-    height: Number((_b = process.env.HEIGHT) !== null && _b !== void 0 ? _b : "0")
-};
 const app = new App({
-    config: {
-        size,
-        fillCooldown: Number((_c = process.env.COOLDOWN) !== null && _c !== void 0 ? _c : 180000),
-    },
+    config: {},
     collections: {
         data: dataCollection,
         log: logCollection
