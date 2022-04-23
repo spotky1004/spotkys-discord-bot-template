@@ -23,7 +23,7 @@ export default async function readyHandler(options: ReadyHandlerOptions) {
       commandsToRegister = commandsToRegister.concat(modCommands);
     }
     registerCommands({
-      clientId: process.env.CLIENT_ID as string,
+      clientId: client.user!.id,
       guildId,
       commands: commandsToRegister,
       token
