@@ -46,13 +46,15 @@ export default async function commandHandler(app: App, interaction: Discord.Comm
   return result;
 }
 
+type CommonCommandName = typeof commands["commonCommands"][keyof typeof commands["commonCommands"]]["commandName"];
+type ModCommandName = typeof commands["modCommands"][keyof typeof commands["modCommands"]]["commandName"];
 const commandNames = {
   common: Object.keys(commands.commonCommands),
   mod: Object.keys(commands.modCommands)
 };
-function isCommonCommandName(commandName: string): commandName is typeof commands["commonCommands"][keyof typeof commands["commonCommands"]]["commandName"] {
+function isCommonCommandName(commandName: string): commandName is CommonCommandName {
   return commandNames.common.includes(commandName);
 }
-function isModCommandName(commandName: string): commandName is typeof commands["modCommands"][keyof typeof commands["modCommands"]]["commandName"] {
+function isModCommandName(commandName: string): commandName is ModCommandName {
   return commandNames.mod.includes(commandName);
 }
