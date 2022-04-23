@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/spotky1004/spotkys-discordjs-base#readme",
   "dependencies": {
+    "@discordjs/builders": "^0.13.0",
     "@discordjs/rest": "^0.4.1",
     "cross-env": "^7.0.3",
     "deepcopy": "^2.1.0",
