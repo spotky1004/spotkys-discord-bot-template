@@ -1,7 +1,7 @@
 import env from "./env.js";
 env();
 import Discord from "discord.js";
-import App from "./class/core/App.js";
+import App from "./class/App.js";
 import { commandJSON } from "./commands/index.js";
 import registerCommands from "./registerCommands.js";
 import { data as dataCollection, log as logCollection } from "./db.js";

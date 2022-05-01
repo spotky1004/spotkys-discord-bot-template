@@ -1,4 +1,4 @@
-import type App from "../class/core/App";
+import type App from "../class/App";
 import type { Client } from "discord.js"
 
 interface TriviaOptions {

@@ -1,5 +1,5 @@
 import type GuildCaches from "./GuildCaches.js";
-import type App from "../core/App.js";
+import type App from "./App.js";
 import type Discord from "discord.js";
 
 export interface GuildData {

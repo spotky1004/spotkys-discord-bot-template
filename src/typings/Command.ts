@@ -1,6 +1,6 @@
 import type { SlashCommandBuilder } from "@discordjs/builders";
 import type Discord from "discord.js";
-import type App from "../class/core/App.js";
+import type App from "../class/App.js";
 
 export interface CommandHandlerOptions {
   app: App;

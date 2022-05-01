@@ -1,5 +1,5 @@
-import UserCaches from "../user/UserCaches.js";
-import GuildCaches from "../guild/GuildCaches.js";
+import UserCaches from "./UserCaches.js";
+import GuildCaches from "./GuildCaches.js";
 import SaveManager, { Collection } from "./SaveManager.js";
 import Logger from "./Logger.js";
 

@@ -1,6 +1,6 @@
 import Guild from "./Guild.js";
 import Discord from "discord.js";
-import type App from "../core/App.js";
+import type App from "./App.js";
 
 class GuildCaches {
   app: App;
