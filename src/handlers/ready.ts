@@ -1,6 +1,6 @@
 import registerCommands, { RegisterCommandsOptions } from "../registerCommands.js";
 import type Discord from "discord.js";
-import type App from "../class/App";
+import type App from "../class/core/App";
 
 interface ReadyHandlerOptions {
   client: Discord.Client<boolean>,

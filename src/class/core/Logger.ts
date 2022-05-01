@@ -1,6 +1,6 @@
 import type App from "./App.js";
 import type mongodb from "mongodb";
-import type { AnyLogSchema, LogSchemas } from "../typings/LogTypings.js";
+import type { AnyLogSchema, LogSchemas } from "../../typings/LogTypings.js";
 
 type LogCursorDocument<T, U extends object | never> = ({ _id: T } & U)[];
 type LogCursorFn<T, U extends object | never> = (count: number) => Promise<LogCursorDocument<T, U> | null>;

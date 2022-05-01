@@ -1,5 +1,5 @@
 import * as commands from "../commands/index.js";
-import type App from "../class/App.js";
+import type App from "../class/core/App.js";
 import type Discord from "discord.js";
 import type { CommandHandlerOptions } from "../typings/Command.js";
 

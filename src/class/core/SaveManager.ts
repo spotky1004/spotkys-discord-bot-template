@@ -1,8 +1,8 @@
 import deepcopy from "deepcopy";
 import App from "./App.js";
 import type mongodb from "mongodb";
-import type { UserData } from "./User.js";
-import type { GuildData } from "./Guild.js";
+import type { UserData } from "../user/User.js";
+import type { GuildData } from "../guild/Guild.js";
 
 export type Collection = mongodb.Collection<mongodb.Document>;
 
@@ -18,7 +18,7 @@ class SaveManager {
     this.collection = collection;
   }
 
-  private async getDocumnet<T extends object>(id: string, defaultData: T) {
+  async getDocumnet<T extends object>(id: string, defaultData: T) {
     const gotDocument = await this.collection.findOne({ _id: id });
     let data = deepcopy(defaultData);
     if (gotDocument !== null) {
@@ -29,7 +29,7 @@ class SaveManager {
     return data;
   }
 
-  private async updateDocument(id: string, data: {[key: string]: any}) {
+  async updateDocument(id: string, data: {[key: string]: any}) {
     const result = await this.collection.updateOne(
       { _id: id },
       { $set: data },
